@@ -93,3 +93,13 @@ Usando arrays, é possível passar os argumentos via variável
 ou até mesmo usando a propriedade arguments que existe internamente em todo objeto.
 
  */
+
+
+//Adicionando prototype através de função___________________________________
+/*
+function User() {}
+User.prototype.perfil = 'estudante'
+let estudante = new User()
+
+console.log(estudante.perfil) //'estudante'
+*/
