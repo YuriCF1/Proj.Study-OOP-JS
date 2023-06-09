@@ -1,4 +1,4 @@
-//OBS: Na vida real, não se passa prototype diretamente, só Object.create. Pois é usado classes. Se 
+//OBS: Na vida real, não se passa prototype diretamente, só Object.create. Pois é usado classes. Se
 
 //____________________Usando CONSTRUTOR para criar um objeto____________________
 function User(nome, email) {
@@ -44,7 +44,7 @@ const userY = {
   },
   exibirInfos: function () {
     //   return [this.nome, this.email];
-    return {...this};
+    return { ...this };
   },
 };
 
