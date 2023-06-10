@@ -9,11 +9,17 @@ class Admin extends User {
   constructor(nome, email, nascimento, role = "admin", ativo = true) {
     super(nome, email, nascimento, role, ativo); //Trazendo todas as propriedades que se quer, de User
   }
+
+  criarCurso(nomeDoCurso, vagas) {
+    return `Curso de ${nomeDoCurso}, criado com ${vagas} vagas`
+  }
 }
 
 const novoAdmin = new Admin("Roger", "r@r.com", "2000-01-01");
 console.log(novoAdmin);
 console.log(novoAdmin.exibirInfos());
+
+console.log(novoAdmin.criarCurso("JS", "20"));
 
 
 /*
