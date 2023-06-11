@@ -5,7 +5,7 @@
 import User from "./User.js";
 
 // _______________________Criando user admin_______________________
-class Admin extends User {
+export default class Admin extends User {
   constructor(nome, email, nascimento, role = "admin", ativo = true) {
     super(nome, email, nascimento, role, ativo); //Trazendo todas as propriedades que se quer, de User
   }
@@ -15,11 +15,11 @@ class Admin extends User {
   }
 }
 
-const novoAdmin = new Admin("Roger", "r@r.com", "2000-01-01");
-console.log(novoAdmin);
-console.log(novoAdmin.exibirInfos());
+// const novoAdmin = new Admin("Roger", "r@r.com", "2000-01-01");
+// console.log(novoAdmin);
+// console.log(novoAdmin.exibirInfos());
 
-console.log(novoAdmin.criarCurso("JS", "20"));
+// console.log(novoAdmin.criarCurso("JS", "20"));
 
 
 /*

@@ -1,15 +1,20 @@
 // _______________________Criando user padrão_______________________
 export default class User {
+  #nome;
+  #email;
+  #nascimento;
+  #role;
+  #ativo;
   constructor(nome, email, nascimento, role, ativo = true) {
-    this.nome = nome;
-    this.email = email;
-    this.nascimento = nascimento;
-    this.role = role || "estudante";
-    this.ativo = ativo;
+    this.#nome = nome;
+    this.#email = email;
+    this.#nascimento = nascimento;
+    this.#role = role || "estudante";
+    this.#ativo = ativo;
   }
 
   exibirInfos() {
-    return `${this.nome}, ${this.email}`;
+    return `${this.#nome}, ${this.#email}`;
   }
 }
 
@@ -20,21 +25,21 @@ export default class User {
 // console.log(User.prototype.isPrototypeOf(novoUser)); //Chegando a cadeia de protótipo de novoUser
 
 //___________________________Métodos estáticos___________________________
-class User2 {
-  constructor() {
-    this.nome = "Camila";
-    this.email = "c@c.com";
-    this.cpf = "12312312312";
-  }
-  exibirInfos() {
-    return `${this.nome}, ${this.email}, ${this.cpf}`;
-  }
+// class User2 {
+//   constructor() {
+//     this.nome = "Camila";
+//     this.email = "c@c.com";
+//     this.cpf = "12312312312";
+//   }
+//   exibirInfos() {
+//     return `${this.nome}, ${this.email}, ${this.cpf}`;
+//   }
 
-  static exibeNome(nome) {
-    return nome;
-  }
-}
+//   static exibeNome(nome) {
+//     return nome;
+//   }
+// }
 
-const novoUser = new User2("Carol", "c@c.com", "12312312312");
-const nomeUser = novoUser.nome;
-console.log(User2.exibeNome(nomeUser)); //Camila
+// const novoUser = new User2("Carol", "c@c.com", "12312312312");
+// const nomeUser = novoUser.nome;
+// console.log(User2.exibeNome(nomeUser)); //Camila
