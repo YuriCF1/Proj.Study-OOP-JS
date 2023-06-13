@@ -13,15 +13,37 @@ export default class User {
     this.#ativo = ativo;
   }
 
-  #montaObjUser() {
-    return {
-      nome: this.#nome,
-      email: this.#email,
-      nascimento: this.#nascimento,
-      role: this.#role,
-      ativo: this.#ativo,
-    }; //Passar um obj literal diretamente, abre chaves nos parênteses
+  get nome() {
+    //Não se chama como função, chama sem parenteses. Nunca recebe argumento
+    //Podendo ter lógica de condicional
+    return this.#nome;
   }
+
+  get email() {
+    return this.#email;
+  }
+
+  get nascimento() {
+    return this.#nascimento;
+  }
+
+  get role() {
+    return this.#role;
+  }
+
+  get ativo() {
+    return this.#ativo;
+  }
+
+  // #montaObjUser() {
+  //   return {
+  //     nome: this.#nome,
+  //     email: this.#email,
+  //     nascimento: this.#nascimento,
+  //     role: this.#role,
+  //     ativo: this.#ativo,
+  //   }; //Passar um obj literal diretamente, abre chaves nos parênteses
+  // }
 
   exibirInfos() {
     const objUser = this.#montaObjUser();
