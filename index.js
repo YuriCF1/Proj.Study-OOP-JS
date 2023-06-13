@@ -7,12 +7,17 @@ console.log(novoUser.exibirInfos());
 
 //Tentativas de mudança, nenhuma delas muda
 // novoUser.#nome = "Leoldo"
-novoUser.nome = "Leoldo"; 
+// novoUser.nome = "Leoldo";
 
 //Tentando executar método privado
 // console.log(novoUser.#montaObjUser());
 
 console.log(novoUser.exibirInfos());
+
+const novoAdmin = new Admin("Roger", "r@r.com", "2021-01-01");
+
+console.log(novoAdmin.exibirInfos());
+console.log(novoAdmin.nome);  //Não se chama como função, chama sem parenteses
 
 //_________________________Exemplos de set e get_________________________
 /*
