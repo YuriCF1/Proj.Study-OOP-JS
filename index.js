@@ -1,16 +1,18 @@
-import User from "./Cap3/User.js"
-import Docente from "./Cap3/Docente.js"
-import Admin from "./Cap3/Admin.js"
+import User from "./Cap3/User.js";
+import Docente from "./Cap3/Docente.js";
+import Admin from "./Cap3/Admin.js";
 
-const novoUser = new User("Jon", "j@j.com", "2000-01-01")
+const novoUser = new User("Jon", "j@j.com", "2000-01-01");
 console.log(novoUser.exibirInfos());
 
 //Tentativas de mudança, nenhuma delas muda
 // novoUser.#nome = "Leoldo"
-novoUser.nome = "Leoldo"
+novoUser.nome = "Leoldo"; 
+
+//Tentando executar método privado
+// console.log(novoUser.#montaObjUser());
 
 console.log(novoUser.exibirInfos());
-
 
 //_________________________Exemplos de set e get_________________________
 /*
