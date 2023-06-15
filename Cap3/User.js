@@ -35,6 +35,13 @@ export default class User {
     return this.#ativo;
   }
 
+  set nome(novoNome) { //O set não usa parâmetros, usa o igual diretamente
+    if(novoNome === '') {
+      throw new Error("Formato inválido")
+    }
+    this.#nome = novoNome; 
+  }
+
   // #montaObjUser() {
   //   return {
   //     nome: this.#nome,
@@ -46,10 +53,11 @@ export default class User {
   // }
 
   exibirInfos() {
-    const objUser = this.#montaObjUser();
+    // const objUser = this.#montaObjUser();
     // return objUser
     // return `${this.#nome}, ${this.#email}`;
-    return `${objUser.nome}, ${objUser.email}`;
+    // return `${objUser.nome}, ${objUser.email}`;
+    return `${this.nome}, ${this.email}`;
   }
 }
 
