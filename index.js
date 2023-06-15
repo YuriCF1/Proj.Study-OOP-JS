@@ -3,7 +3,7 @@ import Docente from "./Cap3/Docente.js";
 import Admin from "./Cap3/Admin.js";
 
 const novoUser = new User("Jon", "j@j.com", "2000-01-01");
-console.log(novoUser.exibirInfos());
+// console.log(novoUser.exibirInfos());
 
 //Tentativas de mudança, nenhuma delas muda
 // novoUser.#nome = "Leoldo"
@@ -12,10 +12,14 @@ console.log(novoUser.exibirInfos());
 //Tentando executar método privado
 // console.log(novoUser.#montaObjUser());
 
-console.log(novoUser.exibirInfos());
+// console.log(novoUser.exibirInfos());
 
 const novoAdmin = new Admin("Roger", "r@r.com", "2021-01-01");
 
+console.log(novoAdmin.exibirInfos());
+console.log(novoAdmin.nome);  //Não se chama como função, chama sem parenteses
+novoAdmin.nome = "Arnaldo"
+// novoAdmin.nome = "" //Testando o validador do set
 console.log(novoAdmin.exibirInfos());
 console.log(novoAdmin.nome);  //Não se chama como função, chama sem parenteses
 
