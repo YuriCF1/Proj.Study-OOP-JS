@@ -17,11 +17,11 @@ const novoUser = new User("Jon", "j@j.com", "2000-01-01");
 const novoAdmin = new Admin("Roger", "r@r.com", "2021-01-01");
 
 console.log(novoAdmin.exibirInfos());
-console.log(novoAdmin.nome);  //Não se chama como função, chama sem parenteses
-novoAdmin.nome = "Arnaldo"
+console.log(novoAdmin.nome); //Não se chama como função, chama sem parenteses
+novoAdmin.nome = "Arnaldo";
 // novoAdmin.nome = "" //Testando o validador do set
 console.log(novoAdmin.exibirInfos());
-console.log(novoAdmin.nome);  //Não se chama como função, chama sem parenteses
+console.log(novoAdmin.nome); //Não se chama como função, chama sem parenteses
 
 //_________________________Exemplos de set e get_________________________
 /*
@@ -129,3 +129,6 @@ novoUser.setNome('Rodrigo');
 console.log(novoUser.getNome()); //Rodrigo
 
 */
+
+const novoDocente = new Docente("Guilherme", "g@g.com", "2021-01-01");
+console.log(novoDocente.exibirInfos());
