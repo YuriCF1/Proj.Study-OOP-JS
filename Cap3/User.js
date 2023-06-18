@@ -1,3 +1,5 @@
+//OBS: SOLID é muito importante no OOP, se necessário, revise!
+
 // _______________________Criando user padrão_______________________
 export default class User {
   #nome;
