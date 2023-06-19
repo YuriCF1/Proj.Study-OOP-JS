@@ -13,7 +13,6 @@ export default class Docente extends User {
   }
 }
 
-
 // const novoDocente = new Docente("Maria", "m@m.com", "2001-01-01")
 // console.log(novoDocente);
 // console.log(novoDocente.exibirInfos());

@@ -37,11 +37,12 @@ export default class User {
     return this.#ativo;
   }
 
-  set nome(novoNome) { //O set não usa parâmetros, usa o igual diretamente
-    if(novoNome === '') {
-      throw new Error("Formato inválido")
+  set nome(novoNome) {
+    //O set não usa parâmetros, usa o igual diretamente
+    if (novoNome === "") {
+      throw new Error("Formato inválido");
     }
-    this.#nome = novoNome; 
+    this.#nome = novoNome;
   }
 
   // #montaObjUser() {
@@ -88,7 +89,6 @@ export default class User {
 // const novoUser = new User2("Carol", "c@c.com", "12312312312");
 // const nomeUser = novoUser.nome;
 // console.log(User2.exibeNome(nomeUser)); //Camila
-
 
 // ___________________________________________SALVANDO NOME E SOBRENOME____________________________________________
 /*
@@ -167,4 +167,3 @@ const nome = novoUser.nome //getter
 novoUser.nome = 'Pedro' //setter
 novoUser.exibeInfos() // método normal
 */
-

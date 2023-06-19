@@ -25,7 +25,6 @@ exibir2PorBaixoDosPanos();
 const exibirNome = exibir2PorBaixoDosPanos.bind(user);
 exibirNome();
 
-
 /*
 OUTRAS MANEIRAS PARA DITAR CONTEXTOS
 ________________________________CALL________________________________
@@ -93,7 +92,6 @@ Usando arrays, é possível passar os argumentos via variável
 ou até mesmo usando a propriedade arguments que existe internamente em todo objeto.
 
  */
-
 
 //Adicionando prototype através de função___________________________________
 /*

@@ -1,4 +1,4 @@
-//Para utilizar a sintaxe ESM sobre 
+//Para utilizar a sintaxe ESM sobre
 //Criando package.json para exportar modulos: npm init -y
 //No arquivo package.json, usar o "type": "module",
 
@@ -16,7 +16,7 @@ export default class Admin extends User {
   // }
 
   criarCurso(nomeDoCurso, vagas) {
-    return `Curso de ${nomeDoCurso}, criado com ${vagas} vagas`
+    return `Curso de ${nomeDoCurso}, criado com ${vagas} vagas`;
   }
 }
 
@@ -25,7 +25,6 @@ export default class Admin extends User {
 // console.log(novoAdmin.exibirInfos());
 
 // console.log(novoAdmin.criarCurso("JS", "20"));
-
 
 /*
 Existe uma convenção no uso de ESM em projetos NodejS, 
